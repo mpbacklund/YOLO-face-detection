@@ -11,8 +11,8 @@ def main():
     # remove all the images that don't have complete data attached to them
     face_images_db, facial_keypoints_df = remove_incomplete_keypoints(face_images_db, facial_keypoints_df)
 
-    if face_images_db.shape[2] > 1500:
-        face_images_db = face_images_db[:,:, :1500]  # Keep only the first 1500 images
+    if face_images_db.shape[2] > 1200:
+        face_images_db = face_images_db[:,:, :1200]  # Keep only the first 1200 images
 
     np.savez('archive/face_images_updated.npz', face_images=face_images_db)
 

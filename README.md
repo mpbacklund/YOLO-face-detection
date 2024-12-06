@@ -1,0 +1,1 @@
+To start the project, run the command `python data_transformations/boxes_to_yolo.py` to extract all of the images/labels and get them in the correct format. 

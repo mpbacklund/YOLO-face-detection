@@ -1,4 +1,0 @@
-train: datasets\train
-val: datasets\test
-nc: 4
-names: ['leftEye', 'rightEye', 'nose', 'mouth']

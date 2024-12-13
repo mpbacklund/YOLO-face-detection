@@ -2,3 +2,5 @@
 *.txt
 /data_transformations/archive/face_images.npz
 /final_env
+/ui/node_modules
+/ui/package-lock.json

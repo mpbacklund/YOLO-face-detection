@@ -1,0 +1,19 @@
+services:
+  backend:
+    build:
+      context: ./predictor
+    volumes: 
+      - ./predictor:/app
+    command: flask --app predictor --debug run --host=0.0.0.0
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: ./ui
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./ui:/app
+      - /app/node_modules # Create a separate node_modules directory in the container
+    tty: true
